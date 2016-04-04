@@ -1,14 +1,23 @@
-# difference-engine
+# Difference Engine
 
-A Clojure library designed to ... well, that part is up to you.
+Charles Babbage's [Difference Engine](https://en.wikipedia.org/wiki/Difference_engine) for Clojure.
 
 ## Usage
 
-FIXME
+```clojure
+(require '[difference-engine :refer :all])
+
+
+(infer [1 2]) ;=> (1 2 3 4 5 ...)
+
+(infer [100 90]) ;=> (100 90 80 70 60 ...)
+
+(infer [1 4 9]) ;=> (1 4 9 16 25 ...)
+
+
+(infer-n 5 [20 15]) ;=> (20 15 10 5 0)
+```
 
 ## License
 
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the Eclipse Public License.
